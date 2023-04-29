@@ -1,0 +1,12 @@
+<robot name="beta" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:arg name="namespace" default="beta"/>
+    <xacro:property name="robot_name" value="$(arg namespace)"/>
+
+
+    
+    <xacro:include filename="$(find beta_desc)/urdf/robot_core.xacro.xml"/>
+    <xacro:include filename="$(find beta_desc)/urdf/robot_control.xacro.xml"/>
+
+
+</robot>
